@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="quiz.css"> <!-- Link the external stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="form-section">
+                <h2 style="color: white;">Details of the participants in Quiz: </h2>
+              </div>
+            <form action="iprpage3.html">
+                <label for="accompanying-teacher">Name of the Participant 1 for Quiz:
+                    <span class="required">*</span>
+                </label>
+                <input type="text" id="accompanying-teacher" name="accompanying-teacher" required>
+
+                <label for="gender">Gender of  Participant 1 for Quiz:
+                    <span class="required">*</span>
+                </label>
+                <select id="gender" name="gender" required>
+                    <option value="">Choose</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Others</option>
+                </select>
+                <label for="class"><strong>Student Class of  Participant 1 for Quiz:</strong> 
+                    <span style="color:red;">*</span></label><br>
+                <select id="class" name="class" required>
+                <option value="class"></option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+                </select>
+                
+                <div class="dropdown-container">
+                    <label for="accommodation">Will Participant 1 for Quiz require Accommodation facility?</label>
+                    <div class="instruction">(Provided, if selected for Final Round at IPR)</div>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="">Choose</option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <label for="accompanying-teacher">Name of the Participant 2 for Quiz:
+                    <span class="required">*</span>
+                      <div class="instruction">(Optional: One student can also present in this quiz competition<br>This participant -2 should be from other class/standard then of participant-1's class/standard.)</div>
+                </label>
+                <input type="text" id="accompanying-teacher" name="accompanying-teacher" required>
+
+                <label for="gender">Gender of  Participant 2 for Quiz:
+                    <span class="required">*</span>
+                </label>
+                <select id="gender" name="gender" required>
+                    <option value="">Choose</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Others</option>
+                </select>
+                <label for="class"><strong>Student Class of  Participant 2 for Quiz:</strong> 
+                    <span style="color:red;">*</span></label><br>
+                <select id="class" name="class" required>
+                <option value="class"></option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+                </select>
+                
+                <div class="dropdown-container">
+                    <label for="accommodation">Will Participant 2 for Quiz require Accommodation facility?</label>
+                    <div class="instruction">(Provided, if selected for Final Round at IPR)</div>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="">Choose</option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+
+                <label for="additional-requirements">Additional Requirements for Quiz presentation (like power, water etc.,):</label>
+                <div class="instruction">(Provided, if selected for Final Round at IPR)</div>
+                <input type="text" id="additional-requirements" name="additional-requirements" placeholder="Optional">
+
+                <div class="form-group">
+                    <strong for="declaration">Declaration:</strong><br><br>
+                    <p class="declaration-text"></p>
+                    <input type="radio" id="declaration" name="declaration" required> We will present Quiz ourselves and will not take help of others. We shall make ourselves ready with required items like mike, camera, internet connection 15 minutes prior to online  preliminary selection round.
+                </div><br>
+                <strong>Continue further to enter details of other competitions....</strong>
+                <br><br>
+                <input type="radio" id="declaration" name="declaration" required> Back to Competitions Section
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="icompetition.html" class="back-btn">Back</a>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
